@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Diky's Shop - Toko Online</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link ke Font Awesome untuk ikon keranjang -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Bagian Header -->
+    <header>
+        <div class="logo">
+            <!-- Pastikan file "Logo shop.png" berada di lokasi yang benar -->
+            <img src="Logo shop.png" alt="Logo Toko">
+            <h1>Diky's Shop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cari produk..." onkeyup="searchProducts()">
+            <button onclick="searchProducts()">Cari</button>
+        </div>
+        <div class="cart">
+            <button onclick="openCart()">
+                <i class="fas fa-shopping-cart"></i> Keranjang
+            </button>
+        </div>
+    </header>
+
+    <!-- Bagian Banner -->
+    <section class="banner">
+        <!-- Pastikan file "Angelina Christy JKT48.jpeg" berada di lokasi yang benar -->
+        <img src="Angelina Christy JKT48.jpeg" alt="Banner Diky's Shop">
+    </section>
+
+    <!-- Daftar Produk -->
+    <section id="productList" class="products">
+        <!-- Produk akan dimuat di sini -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Diky's Shop. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <!-- Modal Keranjang -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h3>Keranjang Belanja</h3>
+            <table id="cartTable">
+                <!-- Daftar produk di keranjang akan muncul di sini -->
+            </table>
+            <h4 id="totalPrice">Total: Rp 0</h4>
+            <button onclick="buyNow()">Beli Sekarang</button>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

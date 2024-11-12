@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #007BFF;
+    --background-color: #f8f8f8;
+    --text-color: #333;
+    --white-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('Blue.png'); /* Latar belakang gambar */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('download\ \(1\).jpeg'); /* Latar belakang gambar header */
+    background-size: cover;
+    background-position: center center;
+    padding: 15px 30px;
+    color: var(--white-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+
+header .search-bar input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+header .search-bar button {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--white-color);
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+header .search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.banner {
+    background-image: url('banner-background.jpg'); /* Latar belakang gambar banner */
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--white-color);
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.cart-modal-content {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 90%;
+    text-align: center;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+footer {
+    background-image: url('footer-background.jpg'); /* Latar belakang gambar footer */
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+    padding: 15px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    margin-top: 10px;
+}
